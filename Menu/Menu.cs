@@ -1,5 +1,7 @@
 using Example;
-using Form2;
+using Example1;
+//using Example2;
+//using Example3;
 namespace Menu
 {
     public partial class Menu : Form
@@ -13,6 +15,13 @@ namespace Menu
             Form1 f = new Form1();
             f.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.Show();
+        }
+
 
     }
 }
