@@ -1,7 +1,10 @@
-﻿namespace Example
+﻿using System.Media;
+
+namespace Example1
 {
     partial class Form1
     {
+        private System.Windows.Forms.Button bt_OK;
         /// <summary>
         ///  Required designer variable.
         /// </summary>

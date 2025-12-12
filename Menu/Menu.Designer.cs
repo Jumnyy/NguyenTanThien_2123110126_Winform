@@ -40,7 +40,7 @@
             button1.Name = "button1";
             button1.Size = new Size(247, 34);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Example1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -50,7 +50,7 @@
             button2.Name = "button2";
             button2.Size = new Size(247, 34);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Text = "Example2";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -60,9 +60,9 @@
             button3.Name = "button3";
             button3.Size = new Size(245, 34);
             button3.TabIndex = 2;
-            button3.Text = "button3";
+            button3.Text = "Example3";
             button3.UseVisualStyleBackColor = true;
-            //button3.Click += button3_Click;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -70,9 +70,9 @@
             button4.Name = "button4";
             button4.Size = new Size(245, 34);
             button4.TabIndex = 3;
-            button4.Text = "button4";
+            button4.Text = "Example4";
             button4.UseVisualStyleBackColor = true;
-            //button4.Click += button4_Click;
+            button4.Click += button4_Click;
             // 
             // Menu
             // 
@@ -85,6 +85,7 @@
             Controls.Add(button1);
             Name = "Menu";
             Text = "Menu";
+            Load += Menu_Load;
             ResumeLayout(false);
         }
 

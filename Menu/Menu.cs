@@ -1,7 +1,7 @@
-using Example;
 using Example1;
-//using Example2;
-//using Example3;
+using Example2;
+using Example3;
+using Example4;
 namespace Menu
 {
     public partial class Menu : Form
@@ -22,6 +22,21 @@ namespace Menu
             f.Show();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.Show();
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 f = new Form4();
+            f.Show();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
 
     }
 }

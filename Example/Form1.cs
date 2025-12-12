@@ -1,4 +1,4 @@
-namespace Example
+namespace Example1
 {
     public partial class Form1 : Form
     {

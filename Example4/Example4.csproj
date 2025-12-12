@@ -8,11 +8,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Example3\Example3.csproj" />
-    <ProjectReference Include="..\Example4\Example4.csproj" />
-    <ProjectReference Include="..\Example\Example1.csproj" />
-    <ProjectReference Include="..\Form2\Example2.csproj" />
-  </ItemGroup>
-
 </Project>
