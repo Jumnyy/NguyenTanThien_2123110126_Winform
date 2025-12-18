@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            tbDisplay = new TextBox();
             bt0 = new Button();
             bt1 = new Button();
             bt2 = new Button();
@@ -39,14 +39,14 @@
             btEquals = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // tbDisplay
             // 
-            textBox1.Location = new Point(115, 25);
-            textBox1.MinimumSize = new Size(50, 50);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(341, 50);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            tbDisplay.Location = new Point(115, 25);
+            tbDisplay.MinimumSize = new Size(50, 50);
+            tbDisplay.Name = "tbDisplay";
+            tbDisplay.Size = new Size(341, 50);
+            tbDisplay.TabIndex = 0;
+            tbDisplay.TextChanged += textBox1_TextChanged;
             // 
             // bt0
             // 
@@ -66,6 +66,7 @@
             bt1.TabIndex = 2;
             bt1.Text = "1";
             bt1.UseVisualStyleBackColor = true;
+            bt1.Click += bt1_Click;
             // 
             // bt2
             // 
@@ -94,6 +95,7 @@
             btPlus.TabIndex = 5;
             btPlus.Text = "+";
             btPlus.UseVisualStyleBackColor = true;
+            btPlus.Click += btPlus_Click;
             // 
             // btMul
             // 
@@ -124,6 +126,7 @@
             btEquals.TabIndex = 8;
             btEquals.Text = "=";
             btEquals.UseVisualStyleBackColor = true;
+            btEquals.Click += btEquals_Click;
             // 
             // Form4
             // 
@@ -138,16 +141,17 @@
             Controls.Add(bt2);
             Controls.Add(bt1);
             Controls.Add(bt0);
-            Controls.Add(textBox1);
+            Controls.Add(tbDisplay);
             Name = "Form4";
             Text = "Form1";
+            Load += Form4_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox tbDisplay;
         private Button bt0;
         private Button bt1;
         private Button bt2;
