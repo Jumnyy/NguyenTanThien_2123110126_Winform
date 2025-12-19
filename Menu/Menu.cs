@@ -9,6 +9,9 @@ using Example8;
 using Example9;
 using Example10;
 using Example11;
+using ExampleQuanly;
+using Example13;
+
 namespace Menu
 {
     public partial class Menu : Form
@@ -90,6 +93,23 @@ namespace Menu
             f.Show();
 
 
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Form12 f = new Form12();
+            f.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Form13 f = new Form13();
+            f.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

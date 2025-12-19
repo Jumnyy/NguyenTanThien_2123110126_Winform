@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Example10\Example10.csproj" />
     <ProjectReference Include="..\Example11\Example11.csproj" />
+    <ProjectReference Include="..\Example13\Example13.csproj" />
     <ProjectReference Include="..\Example3\Example3.csproj" />
     <ProjectReference Include="..\Example4\Example4.csproj" />
     <ProjectReference Include="..\Example5\Example5.csproj" />
@@ -18,8 +19,10 @@
     <ProjectReference Include="..\Example7\Example7.csproj" />
     <ProjectReference Include="..\Example8\Example8.csproj" />
     <ProjectReference Include="..\Example9\Example9.csproj" />
+    <ProjectReference Include="..\ExampleQuanly\ExampleQuanly.csproj" />
     <ProjectReference Include="..\Example\Example1.csproj" />
     <ProjectReference Include="..\Form2\Example2.csproj" />
+    <ProjectReference Include="..\Game\Game.csproj" />
   </ItemGroup>
 
 </Project>
