@@ -14,7 +14,7 @@ namespace Game
         GameState currentState = GameState.Home;
 
         Timer gameTimer;
-        WindowsMediaPlayer bgmPlayer;
+        WindowsMediaPlayer bgmPlayer; // 🎵 ONE BGM PLAYER
 
         PictureBox pbBoom, pbPlayer;
         Label lbScore;
@@ -27,7 +27,7 @@ namespace Game
         int playerSpeed = 18;
         int score = 0;
 
-        Image bgHomeImg, bgGameImg, boomImg, playerImg;
+        Image boomImg, playerImg, bgImg;
         SoundPlayer hitSound, gameOverSound;
 
         public F1()
@@ -39,17 +39,16 @@ namespace Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // ===== LOAD IMAGES =====
-            bgHomeImg = Image.FromFile(Path.Combine(Application.StartupPath, "Images", "1719718.gif"));
-            bgGameImg = bgHomeImg; // dùng chung, muốn khác thì đổi ảnh
+            // ===== IMAGES =====
+            bgImg = Image.FromFile(Path.Combine(Application.StartupPath, "Images", "1719718.gif"));
             boomImg = Image.FromFile(Path.Combine(Application.StartupPath, "Images", "bay.png"));
             playerImg = Image.FromFile(Path.Combine(Application.StartupPath, "Images", "bed.png"));
 
-            // ===== LOAD SOUNDS =====
+            // ===== EFFECT =====
             hitSound = new SoundPlayer(Path.Combine(Application.StartupPath, "Sounds", "hit.wav"));
             gameOverSound = new SoundPlayer(Path.Combine(Application.StartupPath, "Sounds", "gameover.wav"));
 
-            // ===== BGM =====
+            // ===== BGM PLAYER =====
             bgmPlayer = new WindowsMediaPlayer();
             bgmPlayer.settings.setMode("loop", true);
             bgmPlayer.settings.volume = 50;
@@ -57,7 +56,7 @@ namespace Game
             ShowHome();
         }
 
-        // ================= BGM =================
+        // ================= BGM MANAGER =================
         void PlayBGM(string file)
         {
             bgmPlayer.controls.stop();
@@ -71,14 +70,14 @@ namespace Game
             currentState = GameState.Home;
             Controls.Clear();
 
-            BackgroundImage = bgHomeImg;
-            BackgroundImageLayout = ImageLayout.Stretch;
-
             PlayBGM("home.mp3");
+
+            BackgroundImage = bgImg;
+            BackgroundImageLayout = ImageLayout.Stretch;
 
             Label title = new Label
             {
-                Text = "BUỒN NGỦ ZZZ",
+                Text = "NGỦ THÔI Zzz",
                 Font = new Font("Arial", 28, FontStyle.Bold),
                 ForeColor = Color.Black,
                 BackColor = Color.Transparent,
@@ -114,30 +113,27 @@ namespace Game
             Controls.Clear();
             score = 0;
 
-            BackgroundImage = bgGameImg;
-            BackgroundImageLayout = ImageLayout.Stretch;
-
             PlayBGM("game.mp3");
 
             pbPlayer = new PictureBox
             {
-                Size = new Size(100, 70),
+                Size = new Size(80, 50),
                 Image = playerImg,
                 SizeMode = PictureBoxSizeMode.StretchImage,
                 BackColor = Color.Transparent,
-                Location = new Point(ClientSize.Width / 2 - 50, ClientSize.Height - 160)
+                Location = new Point(ClientSize.Width / 2 - 40, ClientSize.Height - 140)
             };
             Controls.Add(pbPlayer);
 
             pbBoom = new PictureBox
             {
-                Size = new Size(80, 80),
+                Size = new Size(60, 60),
                 Image = boomImg,
                 SizeMode = PictureBoxSizeMode.StretchImage,
                 BackColor = Color.Transparent
             };
-            Controls.Add(pbBoom);
             ResetBoom();
+            Controls.Add(pbBoom);
 
             lbScore = new Label
             {
@@ -162,7 +158,7 @@ namespace Game
 
             if (pbBoom.Bounds.IntersectsWith(pbPlayer.Bounds))
             {
-                hitSound.Play();
+                hitSound.Play(); // 🔊 effect KHÔNG CẮT BGM
                 score++;
                 lbScore.Text = $"Score: {score}";
                 ResetBoom();
@@ -178,7 +174,7 @@ namespace Game
             boomY = -pbBoom.Height;
 
             int level = score / 5;
-            boomSpeed = Math.Min(3 + level, 15);
+            boomSpeed = Math.Min(2 + level, 12);
         }
 
         // ================= GAME OVER =================
@@ -191,9 +187,6 @@ namespace Game
             gameOverSound.Play();
 
             Controls.Clear();
-
-            BackgroundImage = bgHomeImg;
-            BackgroundImageLayout = ImageLayout.Stretch;
 
             Label lbOver = new Label
             {
