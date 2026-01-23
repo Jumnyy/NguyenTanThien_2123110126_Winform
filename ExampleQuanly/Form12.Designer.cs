@@ -52,7 +52,6 @@ namespace ExampleQuanly
             rdNu = new RadioButton();
             tbHours = new TextBox();
             label5 = new Label();
-            tbSearch = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvEmployee).BeginInit();
             SuspendLayout();
             // 
@@ -256,19 +255,11 @@ namespace ExampleQuanly
             label5.Text = "Giờ";
             label5.Click += label5_Click;
             // 
-            // tbSearch
-            // 
-            tbSearch.Location = new Point(64, 225);
-            tbSearch.Name = "tbSearch";
-            tbSearch.Size = new Size(150, 34);
-            tbSearch.TabIndex = 21;
-            // 
             // Form12
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1018, 578);
-            Controls.Add(tbSearch);
             Controls.Add(label5);
             Controls.Add(tbHours);
             Controls.Add(rdNu);
@@ -324,6 +315,5 @@ namespace ExampleQuanly
         private RadioButton rdNu;
         private TextBox tbHours;
         private Label label5;
-        private TextBox tbSearch;
     }
 }

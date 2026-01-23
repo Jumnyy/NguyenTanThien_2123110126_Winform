@@ -12,6 +12,7 @@ using Example11;
 using ExampleQuanly;
 using Example13;
 using Game;
+using ExampleSQL;
 namespace Menu
 {
     public partial class Menu : Form
@@ -110,6 +111,12 @@ namespace Menu
         private void button14_Click(object sender, EventArgs e)
         {
             F1 f = new F1();
+            f.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            CustomerGUI f = new CustomerGUI();
             f.Show();
         }
     }

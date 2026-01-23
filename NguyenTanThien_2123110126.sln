@@ -27,11 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example10", "Example10\Exam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example11", "Example11\Example11.csproj", "{27427404-FD4B-44F0-BD02-57648CCBBE23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleQuanly", "ExampleQuanly\ExampleQuanly.csproj", "{5F335414-0AA4-43D2-945D-C76265A7CF2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleQuanly", "ExampleQuanly\ExampleQuanly.csproj", "{5F335414-0AA4-43D2-945D-C76265A7CF2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example13", "Example13\Example13.csproj", "{8F3E0FF7-DB9F-4243-978E-22EC97282613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example13", "Example13\Example13.csproj", "{8F3E0FF7-DB9F-4243-978E-22EC97282613}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{C84A5718-6A23-4345-9D6C-D50062CFF820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game", "Game\Game.csproj", "{C84A5718-6A23-4345-9D6C-D50062CFF820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleSQL", "ExampleSQL\ExampleSQL.csproj", "{7972F2DD-F6DF-4D58-A26E-DF51644B9FCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{C84A5718-6A23-4345-9D6C-D50062CFF820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C84A5718-6A23-4345-9D6C-D50062CFF820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C84A5718-6A23-4345-9D6C-D50062CFF820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7972F2DD-F6DF-4D58-A26E-DF51644B9FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7972F2DD-F6DF-4D58-A26E-DF51644B9FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7972F2DD-F6DF-4D58-A26E-DF51644B9FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7972F2DD-F6DF-4D58-A26E-DF51644B9FCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

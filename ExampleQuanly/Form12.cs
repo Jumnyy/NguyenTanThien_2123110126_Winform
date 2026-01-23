@@ -170,14 +170,6 @@
                 MessageBox.Show("Vui lòng chọn dòng cần xóa!");
             }
         }
-        private void tbSearch_TextChanged(object sender, EventArgs e)
-        {
-            string keyword = tbSearch.Text.Trim().ToLower();
-            foreach (DataGridViewRow row in dgvEmployee.Rows)
-            {
-                row.Visible = string.IsNullOrEmpty(keyword) || row.Cells[1].Value.ToString().ToLower().Contains(keyword);
-            }
-        }
         private void cbPosition_SelectedIndexChanged(object sender, EventArgs e)
         {
 
