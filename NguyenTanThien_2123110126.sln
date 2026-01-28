@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game", "Game\Game.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleSQL", "ExampleSQL\ExampleSQL.csproj", "{7972F2DD-F6DF-4D58-A26E-DF51644B9FCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{3442BE81-8F6A-4F50-AA82-79E0DEDC4065}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Login", "Login\Login.csproj", "{3442BE81-8F6A-4F50-AA82-79E0DEDC4065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLCustomers", "QLCustomers\QLCustomers.csproj", "{14E96CB0-03C3-4E95-B016-1A71975766BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{3442BE81-8F6A-4F50-AA82-79E0DEDC4065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3442BE81-8F6A-4F50-AA82-79E0DEDC4065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3442BE81-8F6A-4F50-AA82-79E0DEDC4065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E96CB0-03C3-4E95-B016-1A71975766BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E96CB0-03C3-4E95-B016-1A71975766BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E96CB0-03C3-4E95-B016-1A71975766BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E96CB0-03C3-4E95-B016-1A71975766BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

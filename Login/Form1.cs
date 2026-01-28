@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 using ExampleSQL;
+using QLCustomers;
 namespace Login
 {
     public partial class Form1 : Form
@@ -42,7 +43,7 @@ namespace Login
                         {
                             MessageBox.Show("Đăng nhập thành công!");
                             // 1. Khởi tạo Form mới (CustomerGUI là tên file/class bạn đang có)
-                            CustomerGUI mainForm = new CustomerGUI();
+                            QLyForm mainForm = new QLyForm();
 
                             // 2. Hiển thị Form mới lên
                             mainForm.Show();
